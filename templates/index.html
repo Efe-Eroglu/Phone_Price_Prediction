@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefon Fiyat Tahmini</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Telefon Fiyat Tahmin Formu</h1>
+        <form id="prediction-form">
+            <label for="brand">Marka:</label>
+            <input type="text" id="brand" name="brand" required>
+
+            <label for="os">İşletim Sistemi:</label>
+            <select id="os" name="os" required>
+                <option value="android">Android</option>
+                <option value="ios">iOS</option>
+                <option value="windows">Windows</option>
+            </select>
+
+            <label for="screen-size">Ekran Boyutu (inç):</label>
+            <input type="number" id="screen-size" name="screen-size" step="0.1" required>
+
+            <label for="battery">Batarya Kapasitesi (mAh):</label>
+            <input type="number" id="battery" name="battery" required>
+
+            <label for="weight">Ağırlık (gram):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="1080p">1080p Video Desteği:</label>
+            <select id="1080p" name="1080p" required>
+                <option value="yes">Evet</option>
+                <option value="no">Hayır</option>
+            </select>
+
+            <label for="4k">4k Video Desteği:</label>
+            <select id="4k" name="4k" required>
+                <option value="yes">Evet</option>
+                <option value="no">Hayır</option>
+            </select>
+
+            <label for="8k">8k Video Desteği:</label>
+            <select id="8k" name="8k" required>
+                <option value="yes">Evet</option>
+                <option value="no">Hayır</option>
+            </select>
+
+            <label for="storage">Depolama:</label>
+            <select id="storage" name="storage" required>
+                <option value="32">32 GB</option>
+                <option value="64">64 GB</option>
+                <option value="128">128 GB</option>
+                <option value="256">256 GB</option>
+                <option value="512">512 GB</option>
+            </select>
+
+            <label for="720p">720p Video Desteği:</label>
+            <select id="720p" name="720p" required>
+                <option value="yes">Evet</option>
+                <option value="no">Hayır</option>
+            </select>
+
+            <button type="submit">Tahmin Et</button>
+        </form>
+    </div>
+</body>
+</html>
